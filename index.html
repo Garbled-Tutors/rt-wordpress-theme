@@ -10,7 +10,7 @@
 			#content {
 				float: left;
 				background: green;
-				width: 200px;
+				width: 800px;
 				height: 200px;
 			}
 			.spacer {
@@ -19,9 +19,23 @@
 				display: block;
 
 			}
+			.two-columns-first {
+				background: teal;
+				display: inline;
+				float: left;
+				width: 300px;
+				margin-left: 0 !important;
+			}
+			.two-columns-last {
+				background: purple;
+				display: inline;
+				float: left;
+				width: 300px;
+				margin-right: 0 !important;
+			}
 			#footer {
 				background: blue;
-				width: 200px;
+				width: 1000px;
 				height: 200px;
 			}
 		</style>
@@ -31,6 +45,12 @@
 			blah
 		</div>
 		<div id='content'>
+			<div class='two-columns-first'>foo</div>
+			<div class='two-columns-last'>bar</div>
+			<div class='spacer'></div>
+			<div class='two-columns-first'>dog</div>
+			<div class='two-columns-last'>cat</div>
+			<div class='spacer'></div>
 		</div>
 		<div class='spacer'></div>
 		<div id='footer'>
